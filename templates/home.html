@@ -1,0 +1,6 @@
+<h1>Message board homepage</h1>
+<ul>
+    {% for post in post_list %} <!--ListView automatically return to us a context variable called <model>_list, where <model> is our model name -->
+    <li>{{ post.text }}</li>
+    {% endfor %}
+</ul>
